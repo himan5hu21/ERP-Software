@@ -32,7 +32,7 @@ const Footer = () => {
           name: "Support",
         },
         {
-          href: "#",
+          href: "/pricing",
           name: "Pricing",
         },
       ],

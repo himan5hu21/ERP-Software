@@ -145,7 +145,7 @@ const Header = () => {
     },
     { title: "Integrations", path: "#", isDrapdown: false },
     { title: "Customers", path: "#", isDrapdown: false },
-    { title: "Pricing", path: "#", isDrapdown: false },
+    { title: "Pricing", path: "/pricing", isDrapdown: false },
     { title: "Contact Us", path: "/contact", isDropdown: false },
   ];
 
