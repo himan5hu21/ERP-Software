@@ -164,7 +164,8 @@ const Header = () => {
           state ? "shadow-lg rounded-b-xl md:shadow-sm" : ""
         }`}
       >
-        <div className="items-center gap-x-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+        <div className="items-center max-w-screen-xl px-4 mx-auto gap-x-14 md:flex md:px-8">
+          {/* Logo + Hamburger */}
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/">
               <img
@@ -174,6 +175,7 @@ const Header = () => {
                 alt="Float UI logo"
               />
             </Link>
+            {/* Hamburger button for mobile */}
             <div className="md:hidden">
               <button
                 className="text-gray-500 hover:text-gray-800"
@@ -182,7 +184,7 @@ const Header = () => {
                 {state ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="w-6 h-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -209,6 +211,7 @@ const Header = () => {
               </button>
             </div>
           </div>
+          {/* Nav Links */}
           <div
             className={`nav-menu flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               state ? "block" : "hidden"
@@ -220,7 +223,7 @@ const Header = () => {
                   <li key={idx}>
                     {item.isDrapdown ? (
                       <button
-                        className="w-full flex items-center align-middle justify-between gap-1 text-gray-700 hover:text-indigo-600"
+                        className="flex items-center justify-between w-full gap-1 text-gray-700 align-middle hover:text-indigo-600"
                         onClick={() =>
                           setDrapdownState({
                             idx,
@@ -238,7 +241,7 @@ const Header = () => {
                     ) : (
                       <Link
                         href={item.path}
-                        className={`block hover:font-normal hover:text-indigo-600 ${
+                        className={`block hover:font-normal hover:text-indigo-600 whitespace-nowrap ${
                           pathname == item.path
                             ? "font-semibold text-indigo-700"
                             : "text-gray-700"
@@ -250,11 +253,11 @@ const Header = () => {
                     {item.isDrapdown &&
                     drapdownState.idx == idx &&
                     drapdownState.isActive ? (
-                      <div className="mt-6 md:absolute md:mt-0 inset-x-0 top-20 bg-white w-full md:w-[900px] md:rounded-xl md:border md:border-gray-200 md:shadow-lg md:mx-auto">
-                        <ul className="max-w-screen-xl mx-auto grid items-center gap-6 md:p-8 md:grid-cols-2 lg:grid-cols-3">
+                      <div className="mt-6 md:absolute md:mt-0 inset-x-0 top-20 bg-white w-full md:w-[900px] md:rounded-xl md:border md:border-gray-200 md:shadow-lg md:mx-auto z-10">
+                        <ul className="grid items-center max-w-screen-xl gap-6 mx-auto md:p-8 md:grid-cols-2 lg:grid-cols-3">
                           {item?.navs.map((dropdownItem, idx) => (
                             <li key={idx}>
-                              <p className="text-indigo-600 text-sm">
+                              <p className="text-sm text-indigo-600">
                                 {dropdownItem.label}
                               </p>
                               <ul className="mt-5 space-y-6">
@@ -262,16 +265,16 @@ const Header = () => {
                                   <li key={idx} className="group">
                                     <a
                                       href={navItem.path}
-                                      className="flex gap-3 items-center"
+                                      className="flex items-center gap-3"
                                     >
-                                      <div className="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center duration-150 group-hover:bg-indigo-600 group-hover:text-white md:w-14 md:h-14">
+                                      <div className="flex items-center justify-center w-12 h-12 text-indigo-600 duration-150 rounded-full bg-indigo-50 group-hover:bg-indigo-600 group-hover:text-white md:w-14 md:h-14">
                                         {navItem.icon}
                                       </div>
                                       <div>
-                                        <span className="text-gray-800 duration-200 group-hover:text-indigo-600 text-sm font-medium md:text-base">
+                                        <span className="text-sm font-medium text-gray-800 duration-200 group-hover:text-indigo-600 md:text-base">
                                           {navItem.title}
                                         </span>
-                                        <p className="text-sm text-gray-600 group-hover:text-gray-800 mt-1">
+                                        <p className="mt-1 text-sm text-gray-600 group-hover:text-gray-800">
                                           {navItem.desc}
                                         </p>
                                       </div>
@@ -289,11 +292,12 @@ const Header = () => {
                   </li>
                 );
               })}
-              <div className="flex-1 items-center justify-end gap-x-6 space-y-3 md:flex md:space-y-0">
+              {/* Auth buttons */}
+              <div className="items-center justify-end flex-1 space-y-3 gap-x-6 md:flex md:space-y-0">
                 <li>
                   <Link
                     href="/login"
-                    className="block py-3 text-center text-gray-700 hover:text-indigo-600 border rounded-lg md:border-none"
+                    className="block py-3 text-center text-gray-700 border rounded-lg hover:text-indigo-600 md:border-none whitespace-nowrap"
                   >
                     Log in
                   </Link>
@@ -301,7 +305,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline"
+                    className="block px-4 py-3 font-medium text-center text-white bg-indigo-600 rounded-lg shadow hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none md:inline whitespace-nowrap"
                   >
                     Sign up
                   </a>
@@ -313,7 +317,7 @@ const Header = () => {
       </nav>
       {state ? (
         <div
-          className="z-10 fixed top-0 w-screen h-screen bg-black/20 backdrop-blur-sm md:hidden"
+          className="fixed top-0 z-10 w-screen h-screen bg-black/20 backdrop-blur-sm md:hidden"
           onClick={() => setState(false)}
         ></div>
       ) : (

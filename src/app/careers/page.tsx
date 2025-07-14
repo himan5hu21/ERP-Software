@@ -95,42 +95,42 @@ export default function Careers() {
   );
 
   return (
-    <div className="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden">
-      <div className="layout-container flex h-full grow flex-col">
-        <div className="px-40 flex flex-1 justify-center py-5">
-          <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div className="@container">
-              <div className="@[480px]:p-4">
-                <div
-                  className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-                  style={{
-                    backgroundImage:
-                      'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA36hYiVzIrIsw9abs0H53Og0e8Pe0oAPDHdOn0BBMgyPyA--Ss-i0WUM2802GqMx_6r8Ek99ajwSvdztkul2alznn_ft_Nhj1Qe4myRINqBlS5lwJiRMQ6J4zcXwSpq_ponMZAiRHvwbVB6I4QFXvZJewATjabm0oUI1O6L_MsoWFTYbeeZTJsip1rCVJzUeglXtBm9rAMKiW3O4ext-EPTH15ujF2vhVnAq1MNHRu9sZCMS48PCsAkJS24Hsv6XUp-JShV943rT4")',
-                  }}
-                >
-                  <div className="flex flex-col gap-2 text-center">
-                    <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
-                      Join Our Team
-                    </h1>
-                    <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      Shape the future of business with us. Explore
-                      opportunities to innovate and grow in a dynamic
-                      environment.
-                    </h2>
-                  </div>
-                  <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-indigo-700 hover:bg-indigo-600 text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
-                    <span className="truncate">View Open Positions</span>
-                  </button>
+    <div className="relative flex flex-col w-full min-h-screen overflow-x-hidden bg-white group/design-root">
+      <div className="flex flex-col h-full grow">
+        <div className="flex justify-center flex-1 w-full px-2 py-3 sm:px-4 md:px-10 lg:px-40">
+          <div className="flex flex-col w-full max-w-[960px] flex-1">
+            {/* Hero section */}
+            <div className="px-2 sm:px-4">
+              <div
+                className="flex w-full min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat sm:gap-8 sm:rounded-lg items-center justify-center px-0 sm:px-4 py-4"
+                style={{
+                  backgroundImage:
+                    'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA36hYiVzIrIsw9abs0H53Og0e8Pe0oAPDHdOn0BBMgyPyA--Ss-i0WUM2802GqMx_6r8Ek99ajwSvdztkul2alznn_ft_Nhj1Qe4myRINqBlS5lwJiRMQ6J4zcXwSpq_ponMZAiRHvwbVB6I4QFXvZJewATjabm0oUI1O6L_MsoWFTYbeeZTJsip1rCVJzUeglXtBm9rAMKiW3O4ext-EPTH15ujF2vhVnAq1MNHRu9sZCMS48PCsAkJS24Hsv6XUp-JShV943rT4")',
+                }}
+              >
+                <div className="flex flex-col gap-2 text-center">
+                  <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl sm:font-black sm:leading-tight sm:tracking-[-0.033em]">
+                    Join Our Team
+                  </h1>
+                  <h2 className="text-sm font-normal leading-normal text-white sm:text-base sm:font-normal sm:leading-normal">
+                    Shape the future of business with us. Explore opportunities
+                    to innovate and grow in a dynamic environment.
+                  </h2>
                 </div>
+                <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-5 bg-indigo-700 hover:bg-indigo-600 text-white text-sm font-bold leading-normal tracking-[0.015em] sm:text-base sm:font-bold sm:leading-normal sm:tracking-[0.015em]">
+                  <span className="truncate">View Open Positions</span>
+                </button>
               </div>
             </div>
+
+            {/* Open positions */}
             <section className="mt-5">
               <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
                 Open Positions
               </h2>
               <div className="px-4 py-3">
-                <label className="flex flex-col min-w-40 h-12 w-full">
-                  <div className="flex w-full flex-1 items-stretch rounded-lg h-full">
+                <label className="flex flex-col w-full h-12 min-w-40">
+                  <div className="flex items-stretch flex-1 w-full h-full rounded-lg">
                     <div
                       className="text-[#60758a] flex border-none bg-[#f0f2f5] items-center justify-center pl-4 rounded-l-lg border-r-0"
                       data-icon="MagnifyingGlass"
@@ -156,9 +156,9 @@ export default function Careers() {
                   </div>
                 </label>
               </div>
-              <div className="px-4 py-3 @container">
-                <div className="flex overflow-hidden rounded-lg border border-[#dbe0e6] bg-white">
-                  <table className="flex-1">
+              <div className="px-4 py-3">
+                <div className="overflow-x-auto rounded-lg border border-[#dbe0e6] bg-white">
+                  <table className="min-w-[600px] w-full">
                     <thead>
                       <tr className="bg-white">
                         <th className="hidden max-[120px]:block px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
@@ -205,15 +205,17 @@ export default function Careers() {
                 </div>
               </div>
             </section>
+
+            {/* Our culture */}
             <section className="mt-5">
               <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
                 Our Culture
               </h2>
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-2 p-2 sm:p-4">
                 {cultureValues.map(({ title, desc, image }, i) => (
                   <div key={i} className="flex flex-col gap-3 pb-3">
                     <div
-                      className="w-full bg-center bg-no-repeat bg-cover aspect-square rounded-lg"
+                      className="w-full bg-center bg-no-repeat bg-cover rounded-lg aspect-square"
                       style={{ backgroundImage: `url(${image})` }}
                     />
                     <div>
@@ -226,16 +228,18 @@ export default function Careers() {
                 ))}
               </div>
             </section>
+
+            {/* Employee testimonials */}
             <section className="mt-5">
               <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
                 Employee Testimonials
               </h2>
-              <div className="flex flex-col gap-8 p-4">
+              <div className="flex flex-col gap-4 p-3 sm:gap-8 sm:p-4">
                 {testimonials.map((t, idx) => (
                   <div key={idx} className="flex flex-col gap-3">
                     <div className="flex items-center gap-3">
                       <div
-                        className="rounded-full size-10 bg-cover bg-center bg-no-repeat"
+                        className="bg-center bg-no-repeat bg-cover rounded-full size-10"
                         style={{ backgroundImage: `url(${t.image})` }}
                       />
                       <div className="flex-1">
@@ -256,16 +260,17 @@ export default function Careers() {
               </div>
             </section>
 
-            <div className="mt-5 @container">
-              <div className="flex flex-col justify-end gap-6 px-4 py-10 bg-indigo-700 rounded @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
-                <div className="flex flex-col gap-2 items-center text-center">
-                  <h1 className="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+            {/* Join us */}
+            <div className="mt-5">
+              <div className="flex flex-col justify-end gap-4 px-2 py-6 bg-indigo-700 rounded sm:gap-8 sm:px-10 sm:py-20">
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <h1 className="text-white tracking-light text-[32px] font-bold leading-tight sm:text-4xl sm:font-black sm:leading-tight sm:tracking-[-0.033em] max-w-[720px]">
                     Ready to Join Us?
                   </h1>
                 </div>
-                <div className="flex flex-1 justify-center">
+                <div className="flex justify-center flex-1">
                   <div className="flex justify-center">
-                    <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-white text-indigo-700 hover:bg-indigo-100 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
+                    <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-5 bg-white text-indigo-700 hover:bg-indigo-100 text-sm font-bold leading-normal tracking-[0.015em] sm:text-base sm:font-bold sm:leading-normal sm:tracking-[0.015em] grow">
                       <span className="truncate">View Open Positions</span>
                     </button>
                   </div>

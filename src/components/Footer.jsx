@@ -11,7 +11,7 @@ const Footer = () => {
           name: "Partners",
         },
         {
-          href: "#",
+          href: "/blog",
           name: "Blog",
         },
         {
@@ -61,8 +61,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto mt-12 md:px-8">
-      <div className="gap-6 justify-between md:flex">
+    <footer className="max-w-screen-xl px-4 py-5 mx-auto mt-12 text-gray-500 bg-white md:px-8">
+      <div className="justify-between gap-6 md:flex">
         <div className="flex-1">
           <div className="max-w-xs">
             <img src="https://www.floatui.com/logo.svg" className="w-32" />
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
           <form onSubmit={(e) => e.preventDefault()}>
             <label className="block pt-4 pb-2">Stay up to date</label>
-            <div className="max-w-sm flex items-center border rounded-md p-1">
+            <div className="flex items-center max-w-sm p-1 border rounded-md">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -85,10 +85,10 @@ const Footer = () => {
             </div>
           </form>
         </div>
-        <div className="flex-1 mt-10 space-y-6 items-center justify-between sm:flex md:space-y-0 md:mt-0">
+        <div className="items-center justify-between flex-1 mt-10 space-y-6 sm:flex md:space-y-0 md:mt-0">
           {footerNavs.map((item, idx) => (
             <ul className="space-y-4" key={idx}>
-              <h4 className="text-gray-800 font-medium">{item.label}</h4>
+              <h4 className="font-medium text-gray-800">{item.label}</h4>
               {item.items.map((el, idx) => (
                 <li key={idx}>
                   <Link
@@ -103,16 +103,16 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="mt-8 py-6 border-t items-center justify-between sm:flex">
+      <div className="items-center justify-between py-6 mt-8 border-t sm:flex">
         <div className="mt-4 sm:mt-0">
           &copy; 2022 Float UI All rights reserved.
         </div>
         <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">
-            <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+            <li className="flex items-center justify-center w-10 h-10 border rounded-full">
               <a href="#">
                 <svg
-                  className="svg-icon w-6 h-6 text-blue-400"
+                  className="w-6 h-6 text-blue-400 svg-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -123,10 +123,10 @@ const Footer = () => {
               </a>
             </li>
 
-            <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+            <li className="flex items-center justify-center w-10 h-10 border rounded-full">
               <a href="#">
                 <svg
-                  className="svg-icon w-6 h-6 text-blue-700"
+                  className="w-6 h-6 text-blue-700 svg-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -137,10 +137,10 @@ const Footer = () => {
               </a>
             </li>
 
-            <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+            <li className="flex items-center justify-center w-10 h-10 border rounded-full">
               <a href="#">
                 <svg
-                  className="svg-icon w-6 h-6 text-blue-500"
+                  className="w-6 h-6 text-blue-500 svg-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -151,10 +151,10 @@ const Footer = () => {
               </a>
             </li>
 
-            <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+            <li className="flex items-center justify-center w-10 h-10 border rounded-full">
               <a href="#">
                 <svg
-                  className="svg-icon w-6 h-6 text-red-600"
+                  className="w-6 h-6 text-red-600 svg-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
