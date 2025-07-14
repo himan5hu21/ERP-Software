@@ -29,11 +29,11 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="bg-white mt-5 max-w-5xl mx-auto dark:bg-gray-900">
+    <section className="max-w-5xl mx-auto mt-5 bg-white ">
       <div className="container px-6 py-12 mx-auto shadow">
         <div className="flex flex-col items-center lg:flex-row lg:-mx-6">
           <div className="w-full lg:w-1/3 md:mx-6">
-            <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
+            <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
               Contact us for <br /> more info
             </h1>
 
@@ -41,7 +41,7 @@ export default function ContactUs() {
               <p className="flex items-start -mx-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 mx-2 text-indigo-700 dark:text-indigo-600"
+                  className="w-6 h-6 mx-2 text-indigo-700"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -59,7 +59,7 @@ export default function ContactUs() {
                   />
                 </svg>
 
-                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
+                <span className="mx-2 text-gray-700 truncate w-72 ">
                   Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
                 </span>
               </p>
@@ -67,7 +67,7 @@ export default function ContactUs() {
               <p className="flex items-start -mx-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 mx-2 text-indigo-700 dark:text-indigo-600"
+                  className="w-6 h-6 mx-2 text-indigo-700 "
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -80,7 +80,7 @@ export default function ContactUs() {
                   />
                 </svg>
 
-                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
+                <span className="mx-2 text-gray-700 truncate w-72 ">
                   (257) 563-7401
                 </span>
               </p>
@@ -88,7 +88,7 @@ export default function ContactUs() {
               <p className="flex items-start -mx-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 mx-2 text-indigo-700 dark:text-indigo-600"
+                  className="w-6 h-6 mx-2 text-indigo-700 "
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -101,18 +101,18 @@ export default function ContactUs() {
                   />
                 </svg>
 
-                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
+                <span className="mx-2 text-gray-700 truncate w-72 ">
                   acb@example.com
                 </span>
               </p>
             </div>
 
             <div className="mt-6 w-80 md:mt-8">
-              <h3 className="text-gray-600 dark:text-gray-300 ">Follow us</h3>
+              <h3 className="text-gray-600 ">Follow us</h3>
 
               <div className="flex mt-4 -mx-1.5 ">
                 <a
-                  className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-indigo-700"
+                  className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-indigo-700"
                   href="#"
                 >
                   <svg
@@ -126,7 +126,7 @@ export default function ContactUs() {
                 </a>
 
                 <a
-                  className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-indigo-700"
+                  className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-indigo-700"
                   href="#"
                 >
                   <svg
@@ -151,7 +151,7 @@ export default function ContactUs() {
                 </a>
 
                 <a
-                  className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-indigo-700"
+                  className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-indigo-700"
                   href="#"
                 >
                   <svg
@@ -168,7 +168,7 @@ export default function ContactUs() {
                 </a>
 
                 <a
-                  className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-indigo-700"
+                  className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-indigo-700"
                   href="#"
                 >
                   <svg
@@ -187,16 +187,16 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="mt-8 w-full lg:w-1/2 md:mx-6">
-            <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
+          <div className="w-full mt-8 lg:w-1/2 md:mx-6">
+            <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl lg:max-w-xl shadow-gray-300/50">
               <h1 className="text-lg font-medium text-gray-700">
                 What do you want to ask
               </h1>
 
               <form onSubmit={handleSubmit(onSubmit)} className="mt-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                   <div className="flex-1">
-                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                    <label className="block mb-2 text-sm text-gray-600 ">
                       Full Name
                     </label>
                     <input
@@ -208,19 +208,19 @@ export default function ContactUs() {
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-indigo-400 focus:ring-indigo-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                     {errors.fullName && (
-                      <p className="text-red-500 text-xs mt-1">
+                      <p className="mt-1 text-xs text-red-500">
                         {errors.fullName.message}
                       </p>
                     )}
                   </div>
 
                   <div className="flex-1">
-                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                    <label className="block mb-2 text-sm text-gray-600">
                       Mobile Number
                     </label>
                     <div className="relative mt-2">
-                      <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
-                        <select className="text-sm bg-transparent outline-none rounded-lg h-full">
+                      <div className="absolute inset-y-0 flex items-center h-6 pr-2 my-auto border-r left-3">
+                        <select className="h-full text-sm bg-transparent rounded-lg outline-none">
                           <option>IN</option>
                           <option>US</option>
                           <option>CN</option>
@@ -242,7 +242,7 @@ export default function ContactUs() {
                     </div>
 
                     {errors.mobile && (
-                      <p className="text-red-500 text-xs mt-1">
+                      <p className="mt-1 text-xs text-red-500">
                         {errors.mobile.message}
                       </p>
                     )}
@@ -250,7 +250,7 @@ export default function ContactUs() {
                 </div>
 
                 <div className="flex-1 mt-6">
-                  <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                  <label className="block mb-2 text-sm text-gray-600 ">
                     Email address
                   </label>
                   <input
@@ -266,14 +266,14 @@ export default function ContactUs() {
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-indigo-400 focus:ring-indigo-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                   {errors.email && (
-                    <p className="text-red-500 text-xs mt-1">
+                    <p className="mt-1 text-xs text-red-500">
                       {errors.email.message}
                     </p>
                   )}
                 </div>
 
                 <div className="w-full mt-6">
-                  <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                  <label className="block mb-2 text-sm text-gray-600 ">
                     Message
                   </label>
                   <textarea
@@ -284,7 +284,7 @@ export default function ContactUs() {
                     placeholder="Message"
                   ></textarea>
                   {errors.message && (
-                    <p className="text-red-500 text-xs mt-1">
+                    <p className="mt-1 text-xs text-red-500">
                       {errors.message.message}
                     </p>
                   )}
@@ -301,7 +301,7 @@ export default function ContactUs() {
                   {loading ? (
                     <>
                       <svg
-                        className="animate-spin h-5 w-5 mr-2 text-white"
+                        className="w-5 h-5 mr-2 text-white animate-spin"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"

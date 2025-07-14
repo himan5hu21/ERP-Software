@@ -7,7 +7,7 @@ const Footer = () => {
       label: "Company",
       items: [
         {
-          href: "#",
+          href: "/partners",
           name: "Partners",
         },
         {
@@ -71,7 +71,7 @@ const Footer = () => {
               the 1500s.
             </p>
           </div>
-          <form onSubmit={(e) => e.preventDefault()}>
+          {/* <form onSubmit={(e) => e.preventDefault()}>
             <label className="block pt-4 pb-2">Stay up to date</label>
             <div className="flex items-center max-w-sm p-1 border rounded-md">
               <input
@@ -83,9 +83,9 @@ const Footer = () => {
                 Subscribe
               </button>
             </div>
-          </form>
+          </form> */}
         </div>
-        <div className="items-center justify-between flex-1 mt-10 space-y-6 sm:flex md:space-y-0 md:mt-0">
+        <div className="items-start justify-between flex-1 mt-10 space-y-6 sm:flex md:space-y-0 md:mt-0">
           {footerNavs.map((item, idx) => (
             <ul className="space-y-4" key={idx}>
               <h4 className="font-medium text-gray-800">{item.label}</h4>
