@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@plugin 'tailwind-scrollbar';
+
+@theme {
+  --breakpoint-3xl: 68rem;
+  --color-primary: #432dd7;
+}

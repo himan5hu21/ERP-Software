@@ -15,6 +15,10 @@ const Footer = () => {
           name: "Blog",
         },
         {
+          href: "/features",
+          name: "Features",
+        },
+        {
           href: "/careers",
           name: "Careers",
         },

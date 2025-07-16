@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import LogoGrid from "./LogoGrid";
 import Features from "./Features";
 import Faqs from "./Faqs";
+import Features2 from "./Features2";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useForm } from "react-hook-form";
 
@@ -22,6 +23,7 @@ const Dashboard = () => {
     <section>
       <Hero />
       <LogoGrid />
+      <Features2 />
       <section className="relative max-w-screen-xl px-4 py-4 mx-auto mt-8 md:px-8">
         <div className="absolute top-0 left-0 w-full h-full bg-white opacity-40"></div>
         <div className="relative items-center gap-5 lg:flex">

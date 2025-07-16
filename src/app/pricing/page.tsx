@@ -383,9 +383,10 @@ export default function Partners() {
             </div>
           </div>
           <div className="mt-16">
+            {/* Sticky header */}
             <div className="sticky top-0 py-6 bg-white border-b">
               <div className="max-w-screen-xl mx-auto">
-                <ul className="flex justify-around px-4 ml-auto gap-x-6 md:px-8 lg:max-w-4xl xl:max-w-5xl">
+                <ul className="flex justify-around px-4 ml-auto gap-x-6 md:px-8 lg:max-w-[850px] 3xl:max-w-[900px] xl:max-w-5xl">
                   {plans.map((item, idx) => (
                     <li
                       key={idx}
@@ -441,6 +442,8 @@ export default function Partners() {
                 </ul>
               </div>
             </div>
+
+            {/* Feature table */}
             <div className="max-w-screen-xl px-4 mx-auto mt-10 space-y-4 overflow-auto md:overflow-visible md:px-8">
               {tables.map((table, idx) => (
                 <table

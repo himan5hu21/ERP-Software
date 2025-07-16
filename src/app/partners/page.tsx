@@ -89,7 +89,7 @@ export default function Partners() {
   return (
     <div
       className="relative flex flex-col min-h-screen overflow-x-hidden bg-white group/design-root"
-      style={{ fontFamily: 'Newsreader, "Noto Sans", sans-serif' }}
+      // style={{ fontFamily: 'Newsreader, "Noto Sans", sans-serif' }}
     >
       <div className="flex flex-col h-full layout-container grow">
         <main className="flex justify-center flex-1 px-2 py-5 sm:px-4 md:px-10 lg:px-40">
