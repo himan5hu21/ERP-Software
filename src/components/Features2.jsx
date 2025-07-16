@@ -18,7 +18,7 @@ const productionTab = [
         inside BOMs) of your finished goods easily
       </>
     ),
-    img: "https://letstranzact.com/_nuxt/img/multi-bom-snap.f117b72.svg",
+    img: "/image/feature2-multi-level-dom.svg",
   },
   {
     title: "Process Tracking",
@@ -30,7 +30,7 @@ const productionTab = [
         deadlines
       </>
     ),
-    img: "https://letstranzact.com/_nuxt/img/process-trk-snap.32383b7.svg",
+    img: "/image/feature2-process-tracking.svg",
   },
   {
     title: "Costing",
@@ -41,7 +41,7 @@ const productionTab = [
         it
       </>
     ),
-    img: "https://letstranzact.com/_nuxt/img/costing-snap.337ef83.svg",
+    img: "/image/feature2-costing.svg",
   },
   {
     title: "Scrap Tracking",
@@ -52,7 +52,7 @@ const productionTab = [
         measure its costing.
       </>
     ),
-    img: "https://letstranzact.com/_nuxt/img/scrap-trk-snap.f0399d1.svg",
+    img: "/image/feature2-scap-tracking.svg",
   },
   {
     title: "Subcontracting",
@@ -63,7 +63,7 @@ const productionTab = [
         subcontracts seamlessly
       </>
     ),
-    img: "https://letstranzact.com/_nuxt/img/subcontract-snap.f2d12d6.svg",
+    img: "/image/feature2-subcontracting.svg",
   },
 ];
 
@@ -73,17 +73,17 @@ const inventoryTab = [
     features: [
       {
         desc: "Stock Update Automation",
-        img: "https://letstranzact.com/_nuxt/img/stock-update.f31b507.svg",
+        img: "/image/feature2-inventory-1.svg",
         bgColor: "bg-yellow-100",
       },
       {
         desc: "Stock Valuation, History and Ageing",
-        img: "	https://letstranzact.com/_nuxt/img/stock-valuation.ccd0dfd.svg",
+        img: "/image/feature2-inventory-2.svg",
         bgColor: "bg-green-100",
       },
       {
         desc: "Automatic Alerts and Reminders",
-        img: "https://letstranzact.com/_nuxt/img/automatic-alerts.00638e8.svg",
+        img: "/image/feature2-inventory-3.svg",
         bgColor: "bg-blue-100",
       },
     ],
@@ -93,17 +93,17 @@ const inventoryTab = [
     features: [
       {
         desc: "End-to-end Process Tracking",
-        img: "https://letstranzact.com/_nuxt/img/end-to-end.e32670e.svg",
+        img: "/image/feature2-process-1.svg",
         bgColor: "bg-green-100",
       },
       {
         desc: "Production Costing & Scrap Tracking",
-        img: "https://letstranzact.com/_nuxt/img/production-costing.30de19a.svg",
+        img: "/image/feature2-process-2.svg",
         bgColor: "bg-yellow-100",
       },
       {
         desc: "Subcontract Management",
-        img: "	https://letstranzact.com/_nuxt/img/subcontract-management.c27dc53.svg",
+        img: "/image/feature2-process-3.svg",
         bgColor: "bg-blue-100",
       },
     ],
@@ -113,17 +113,17 @@ const inventoryTab = [
     features: [
       {
         desc: "One-click MRP Reports",
-        img: "https://letstranzact.com/_nuxt/img/one-click-mrp.6da8c39.svg",
+        img: "/image/feature2-costing-1.svg",
         bgColor: "bg-yellow-100",
       },
       {
         desc: "Purchase Requisition (Indent) Tracking",
-        img: "	https://letstranzact.com/_nuxt/img/purchase-requisition.a3691a2.svg",
+        img: "/image/feature2-costing-2.svg",
         bgColor: "bg-green-100",
       },
       {
         desc: "Easy Made-to-Order Planning",
-        img: "	https://letstranzact.com/_nuxt/img/easy-made-to-order.7fe6c29.svg",
+        img: "/image/feature2-costing-3.svg",
         bgColor: "bg-blue-100",
       },
     ],
@@ -133,17 +133,17 @@ const inventoryTab = [
     features: [
       {
         desc: "Advanced Lead Management",
-        img: "https://letstranzact.com/_nuxt/img/advanced-lead.c0e45bb.svg",
+        img: "/image/feature2-tracking-1.svg",
         bgColor: "bg-blue-100",
       },
       {
         desc: "16+ Documents Transaction Timeline",
-        img: "	https://letstranzact.com/_nuxt/img/documents-transaction.654592c.svg",
+        img: "/image/feature2-tracking-2.svg",
         bgColor: "bg-green-100",
       },
       {
         desc: "Gmail/WhatsApp Integration",
-        img: "	https://letstranzact.com/_nuxt/img/gmail-whatsapp.fa76d4c.svg",
+        img: "/image/feature2-tracking-3.svg",
         bgColor: "bg-yellow-100",
       },
     ],
@@ -153,17 +153,17 @@ const inventoryTab = [
     features: [
       {
         desc: "Log Payments against Invoices",
-        img: "	https://letstranzact.com/_nuxt/img/log-payments.636f9f3.svg",
+        img: "/image/feature-payment-1.svg",
         bgColor: "bg-yellow-100",
       },
       {
         desc: "Effortless & Error-free Payouts",
-        img: "https://letstranzact.com/_nuxt/img/effortless-error-free.4362e4d.svg",
+        img: "/image/feature-payment-2.svg",
         bgColor: "bg-green-100",
       },
       {
         desc: "Automated Payment Reminders",
-        img: "https://letstranzact.com/_nuxt/img/automated-payment.3e99049.svg",
+        img: "/image/feature-payment-3.svg",
         bgColor: "bg-blue-100",
       },
     ],
@@ -173,17 +173,17 @@ const inventoryTab = [
     features: [
       {
         desc: "Integration with Tally, Busy & Zoho",
-        img: "	https://letstranzact.com/_nuxt/img/integration-tally.b7c08ec.svg",
+        img: "/image/feature-accounting-1.svg",
         bgColor: "bg-green-100",
       },
       {
         desc: "8+ Accounting Reports",
-        img: "https://letstranzact.com/_nuxt/img/accounting-reports.95bb5f4.svg",
+        img: "/image/feature-accounting-2.svg",
         bgColor: "bg-blue-100",
       },
       {
         desc: "Import Master Data from Tally",
-        img: "	https://letstranzact.com/_nuxt/img/import-master-data.f1d09e3.svg",
+        img: "/image/feature-accounting-3.svg",
         bgColor: "bg-yellow-100",
       },
     ],
@@ -293,7 +293,7 @@ export default function Features2() {
           <div className="relative z-10 flex w-full max-w-5xl justify-center mb-5">
             <div className="w-full overflow-x-auto scrollbar-none">
               <div className="w-fit mx-auto flex flex-nowrap justify-center gap-4 border border-indigo-100 rounded-full px-4 bg-white shadow-sm whitespace-nowrap">
-                {productionTab.map((tab, index) => (
+                {inventoryTab.map((tab, index) => (
                   <button
                     key={index}
                     onClick={() => setActiveTab2(index)}
@@ -362,7 +362,7 @@ export default function Features2() {
             {/* Block 1 */}
             <div className="flex flex-col items-center text-center mb-5 sm:mb-0 sm:w-5/12">
               <img
-                src="https://letstranzact.com/_nuxt/img/14-days.7f52fbc.svg"
+                src="/image/feature-14day.svg"
                 alt="Go Live in 14 Days"
                 className="mb-3"
               />
@@ -375,7 +375,7 @@ export default function Features2() {
             {/* Block 2 */}
             <div className="flex flex-col items-center text-center mb-5 sm:mb-0 sm:px-0 sm:w-5/12">
               <img
-                src="	https://letstranzact.com/_nuxt/img/free-impl.2ba8ea9.svg"
+                src="/image/feature-setting.svg"
                 alt="Free Implementation"
                 className="mb-3"
               />
@@ -389,7 +389,7 @@ export default function Features2() {
             {/* Block 3 */}
             <div className="flex flex-col items-center text-center mb-5 sm:mb-0 sm:w-5/12">
               <img
-                src="	https://letstranzact.com/_nuxt/img/free-impl.2ba8ea9.svg"
+                src="/image/feature-support.svg"
                 alt="Free Chat Support"
                 className="mb-3"
               />
