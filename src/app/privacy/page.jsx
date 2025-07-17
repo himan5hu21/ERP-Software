@@ -1,23 +1,23 @@
 export default function PrivacyPolicyPage() {
   return (
-    <section className="bg-white text-gray-800 mx-auto">
-      <div className="bg-indigo-50 rounded-lg p-6">
-        <h1 className="text-4xl font-bold text-indigo-700 text-center mb-10">
+    <section className="mx-auto mt-0.5 text-gray-800 bg-white">
+      <div className="p-6 rounded-lg bg-indigo-50">
+        <h1 className="mb-10 text-4xl font-bold text-center text-indigo-700">
           Privacy Policy
         </h1>
 
-        <p className="max-w-5xl mx-auto text-center mb-6">
+        <p className="max-w-5xl mx-auto mb-6 text-center">
           This Privacy Policy outlines how we collect, use, and protect your
           information when you use our ERP software and related services.
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto p-6">
+      <div className="max-w-5xl p-6 mx-auto">
         {/* 1. Information Collection */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           1. Information We Collect
         </h2>
-        <ul className="list-disc pl-6 mb-4 space-y-2">
+        <ul className="pl-6 mb-4 space-y-2 list-disc">
           <li>
             <strong>Personal Information:</strong> Name, email, phone number,
             company name, etc.
@@ -36,10 +36,10 @@ export default function PrivacyPolicyPage() {
         </ul>
 
         {/* 2. How We Use Information */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           2. How We Use Your Information
         </h2>
-        <ul className="list-disc pl-6 mb-4 space-y-2">
+        <ul className="pl-6 mb-4 space-y-2 list-disc">
           <li>To provide and maintain the ERP services.</li>
           <li>To improve functionality and user experience.</li>
           <li>To communicate with you (support, updates, billing).</li>
@@ -47,20 +47,20 @@ export default function PrivacyPolicyPage() {
         </ul>
 
         {/* 3. Data Sharing */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           3. Data Sharing & Disclosure
         </h2>
         <p className="mb-4">
           We do not sell or rent your personal data. We may share it only with:
         </p>
-        <ul className="list-disc pl-6 mb-4 space-y-2">
+        <ul className="pl-6 mb-4 space-y-2 list-disc">
           <li>Trusted service providers under confidentiality agreements.</li>
           <li>Government or legal bodies if required by law.</li>
           <li>In connection with a merger, acquisition, or sale of assets.</li>
         </ul>
 
         {/* 4. Cookies */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           4. Cookies & Tracking
         </h2>
         <p className="mb-4">
@@ -70,7 +70,7 @@ export default function PrivacyPolicyPage() {
         </p>
 
         {/* 5. Data Security */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">5. Data Security</h2>
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">5. Data Security</h2>
         <p className="mb-4">
           We implement appropriate technical and organizational measures to
           protect your data against unauthorized access, alteration, disclosure,
@@ -78,7 +78,7 @@ export default function PrivacyPolicyPage() {
         </p>
 
         {/* 6. Data Retention */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">6. Data Retention</h2>
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">6. Data Retention</h2>
         <p className="mb-4">
           We retain your information as long as your account is active or as
           needed to provide services, comply with legal obligations, or resolve
@@ -86,17 +86,17 @@ export default function PrivacyPolicyPage() {
         </p>
 
         {/* 7. Your Rights */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           7. Your Rights & Choices
         </h2>
-        <ul className="list-disc pl-6 mb-4 space-y-2">
+        <ul className="pl-6 mb-4 space-y-2 list-disc">
           <li>Access, update, or delete your personal data.</li>
           <li>Opt out of non-essential communications.</li>
           <li>Withdraw consent where processing is based on consent.</li>
         </ul>
 
         {/* 8. Children's Privacy */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           8. Children's Privacy
         </h2>
         <p className="mb-4">
@@ -106,7 +106,7 @@ export default function PrivacyPolicyPage() {
         </p>
 
         {/* 9. Changes to Policy */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           9. Updates to This Policy
         </h2>
         <p className="mb-4">
@@ -116,7 +116,7 @@ export default function PrivacyPolicyPage() {
         </p>
 
         {/* 10. Contact */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">10. Contact Us</h2>
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">10. Contact Us</h2>
         <p className="mb-4">
           If you have any questions or concerns about this Privacy Policy,
           contact us at:{" "}
@@ -128,7 +128,7 @@ export default function PrivacyPolicyPage() {
           </a>
         </p>
 
-        <p className="text-sm text-gray-500 mt-12 text-center">
+        <p className="mt-12 text-sm text-center text-gray-500">
           Last updated: July 11, 2025
         </p>
       </div>

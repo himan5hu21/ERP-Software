@@ -88,7 +88,7 @@ const benefits = [
 export default function Partners() {
   return (
     <div
-      className="relative flex flex-col min-h-screen overflow-x-hidden bg-white group/design-root"
+      className="relative flex flex-col min-h-screen mt-5 overflow-x-hidden bg-white group/design-root"
       // style={{ fontFamily: 'Newsreader, "Noto Sans", sans-serif' }}
     >
       <div className="flex flex-col h-full layout-container grow">

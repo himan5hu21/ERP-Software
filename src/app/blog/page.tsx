@@ -51,7 +51,7 @@ const recent = [
 
 export default function Blog() {
   return (
-    <div className="min-h-screen px-4 py-6 font-sans bg-white">
+    <div className="min-h-screen px-4 py-6 mt-5 font-sans bg-white">
       <div className="flex flex-col max-w-screen-xl gap-6 mx-auto lg:flex-row">
         {/* Latest Posts */}
         <div className="flex-1">

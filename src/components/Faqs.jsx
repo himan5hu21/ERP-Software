@@ -14,16 +14,16 @@ const FaqsCard = (props) => {
 
   return (
     <div
-      className="space-y-3 mt-5 overflow-hidden border-b"
+      className="mt-5 space-y-3 overflow-hidden border-b"
       key={idx}
       onClick={handleOpenAnswer}
     >
-      <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
+      <h4 className="flex items-center justify-between pb-5 text-lg font-medium text-gray-700 cursor-pointer">
         {faqsList.q}
         {state ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-500 ml-2"
+            className="w-5 h-5 ml-2 text-gray-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -38,7 +38,7 @@ const FaqsCard = (props) => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-500 ml-2"
+            className="w-5 h-5 ml-2 text-gray-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -68,39 +68,43 @@ const FaqsCard = (props) => {
 const Faqs = () => {
   const faqsList = [
     {
-      q: "What are some random questions to ask?",
-      a: "That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question.",
+      q: "What types of businesses can use this ERP?",
+      a: "Our ERP is built for small to mid-size enterprises across industries like manufacturing, distribution, retail, and service operations.",
     },
     {
-      q: "Do you include common questions?",
-      a: "This generator doesn't include most common questions. The thought is that you can come up with common questions on your own so most of the questions in this generator.",
+      q: "Does it support role-based access?",
+      a: "Yes. You can define user roles, assign permissions, and manage access with fine-grained control-ensuring data security and accountability.",
     },
     {
-      q: "Can I use this for 21 questions?",
-      a: "Yes! there are two ways that you can use this question generator depending on what you're after. You can indicate that you want 21 questions generated.",
+      q: "Can I customize the workflows?",
+      a: "Absolutely. From inquiry to quotation to order fulfillment, each module is flexible to match your business processes.",
     },
     {
-      q: "Are these questions for girls or for boys?",
-      a: "The questions in this generator are gender neutral and can be used to ask either male of females (or any other gender the person identifies with).",
+      q: "Is real-time reporting available?",
+      a: "Yes. Get actionable insights with live dashboards and customizable reports, helping you stay ahead on metrics that matter.",
     },
     {
-      q: "What do you wish you had more talent doing?",
-      a: "If you've been searching for a way to get random questions, you've landed on the correct webpage. We created the Random Question Generator to ask you as many random questions as your heart desires.",
+      q: "Can I access the system remotely?",
+      a: "The ERP is web-based and fully responsive, so your team can work from anywhere with secure access.",
+    },
+    {
+      q: "Is the system scalable?",
+      a: "It’s designed to grow with you—add more users, modules, or data without compromising speed or performance.",
     },
   ];
 
   return (
-    <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
+    <section className="max-w-screen-xl px-4 mx-auto mt-12 leading-relaxed md:px-8">
       <div className="space-y-3 text-center">
-        <h1 className="text-3xl text-gray-800 font-semibold">
+        <h1 className="text-3xl font-semibold text-gray-800">
           Frequently Asked Questions
         </h1>
-        <p className="text-gray-600 max-w-lg mx-auto text-lg">
+        <p className="max-w-lg mx-auto text-lg text-gray-600">
           Answered all frequently asked questions, Still confused? feel free to
           contact us.
         </p>
       </div>
-      <div className="mt-14 max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto mt-14">
         {faqsList.map((item, idx) => (
           <FaqsCard key={idx} idx={idx} faqsList={item} />
         ))}

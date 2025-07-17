@@ -13,19 +13,34 @@ export default function SupportPage() {
 
   const supportList = [
     {
-      question: "How can I reset my password?",
+      question: "What types of businesses can use this ERP?",
       answer:
-        "Go to the login page, click 'Forgot Password', and follow the instructions sent to your email.",
+        "Our ERP is built for small to mid-size enterprises across industries like manufacturing, distribution, retail, and service operations.",
     },
     {
-      question: "Where can I track my order?",
+      question: "Does it support role-based access?",
       answer:
-        "You can track your order in your profile under 'Orders'. You will also receive email updates.",
+        "Yes. You can define user roles, assign permissions, and manage access with fine-grained control—ensuring data security and accountability.",
     },
     {
-      question: "How long does it take for support to respond?",
+      question: "Can I customize the workflows?",
       answer:
-        "Our support team typically responds within 24 hours during business days.",
+        "Absolutely. From inquiry to quotation to order fulfillment, each module is flexible to match your business processes.",
+    },
+    {
+      question: "Is real-time reporting available?",
+      answer:
+        "Yes. Get actionable insights with live dashboards and customizable reports, helping you stay ahead on metrics that matter.",
+    },
+    {
+      question: "Can I access the system remotely?",
+      answer:
+        "The ERP is web-based and fully responsive, so your team can work from anywhere with secure access.",
+    },
+    {
+      question: "Is the system scalable?",
+      answer:
+        "It’s designed to grow with you—add more users, modules, or data without compromising speed or performance.",
     },
   ];
 
@@ -49,39 +64,39 @@ export default function SupportPage() {
   ];
 
   return (
-    <section className="px-4 py-16 md:px-8 bg-gray-50 min-h-screen">
+    <section className="min-h-screen px-4 py-16 md:px-8">
       {/* Header */}
-      <div className="max-w-4xl mx-auto text-center mb-12">
+      <div className="max-w-4xl mx-auto mb-12 text-center">
         <h1 className="text-4xl font-bold text-indigo-700">Support</h1>
-        <p className="mt-4 text-gray-600 text-lg">
+        <p className="mt-4 text-lg text-gray-600">
           Need help? Browse our FAQs or reach out to our support team.
         </p>
       </div>
 
       {/* FAQ Section */}
       <div className="max-w-4xl mx-auto mb-16">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-6">FAQs</h2>
+        <h2 className="mb-6 text-2xl font-semibold text-gray-800">FAQs</h2>
         <ul className="space-y-4">
           {supportList.map((item, idx) => (
-            <li key={idx} className="border-l-4 border-indigo-500 pl-4">
+            <li key={idx} className="pl-4 border-l-4 border-indigo-500">
               <p className="font-semibold text-indigo-700">{item.question}</p>
-              <p className="text-gray-600 mt-1">{item.answer}</p>
+              <p className="mt-1 text-gray-600">{item.answer}</p>
             </li>
           ))}
         </ul>
       </div>
 
       {/* Quick Support Categories */}
-      <div className="max-w-4xl mx-auto grid gap-4 sm:grid-cols-2 mb-12 text-center">
+      {/* <div className="grid max-w-4xl gap-4 mx-auto mb-12 text-center sm:grid-cols-2">
         {quickSupport.map((item, idx) => (
           <div
             key={idx}
-            className="bg-white p-6 rounded-xl shadow hover:shadow-md border border-gray-100"
+            className="p-6 bg-white border border-gray-100 shadow rounded-xl hover:shadow-md"
           >
             <h3 className="text-lg font-semibold text-indigo-600">{item}</h3>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Contact Info + Support Form */}
       <ContactUs />

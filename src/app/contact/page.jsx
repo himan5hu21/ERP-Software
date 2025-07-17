@@ -29,8 +29,8 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="max-w-5xl mx-auto mt-5 bg-white ">
-      <div className="container px-6 py-12 mx-auto shadow">
+    <section className="max-w-5xl mx-auto mt-10 bg-white">
+      <div className="container px-6 py-12 mx-auto shadow-md">
         <div className="flex flex-col items-center lg:flex-row lg:-mx-6">
           <div className="w-full lg:w-1/3 md:mx-6">
             <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
@@ -59,12 +59,13 @@ export default function ContactUs() {
                   />
                 </svg>
 
-                <span className="mx-2 text-gray-700 truncate w-72 ">
-                  Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+                <span className="mx-2 text-gray-700 w-72 ">
+                  402 , Shreem Maxima, beside National handloom, opp. Angel
+                  Arcade, Nikol, Ahmedabad, Gujarat 382410
                 </span>
               </p>
 
-              <p className="flex items-start -mx-2">
+              <a href="tel:+91 93135 56651" className="flex items-start -mx-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6 mx-2 text-indigo-700 "
@@ -81,11 +82,14 @@ export default function ContactUs() {
                 </svg>
 
                 <span className="mx-2 text-gray-700 truncate w-72 ">
-                  (257) 563-7401
+                  +91 93135 56651
                 </span>
-              </p>
+              </a>
 
-              <p className="flex items-start -mx-2">
+              <a
+                href="mailto:info@airwix.in"
+                className="flex items-start -mx-2"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6 mx-2 text-indigo-700 "
@@ -102,9 +106,9 @@ export default function ContactUs() {
                 </svg>
 
                 <span className="mx-2 text-gray-700 truncate w-72 ">
-                  acb@example.com
+                  info@airwix.in
                 </span>
-              </p>
+              </a>
             </div>
 
             <div className="mt-6 w-80 md:mt-8">

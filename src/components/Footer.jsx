@@ -6,10 +6,10 @@ const Footer = () => {
     {
       label: "Company",
       items: [
-        {
-          href: "/partners",
-          name: "Partners",
-        },
+        // {
+        //   href: "/partners",
+        //   name: "Partners",
+        // },
         {
           href: "/blog",
           name: "Blog",
@@ -35,10 +35,10 @@ const Footer = () => {
           href: "/support",
           name: "Support",
         },
-        {
-          href: "/pricing",
-          name: "Pricing",
-        },
+        // {
+        //   href: "/pricing",
+        //   name: "Pricing",
+        // },
       ],
     },
     {
@@ -69,10 +69,18 @@ const Footer = () => {
       <div className="justify-between gap-6 md:flex">
         <div className="flex-1">
           <div className="max-w-xs">
-            <img src="https://www.floatui.com/logo.svg" className="w-32" />
+            <Link href={"/"}>
+              <img
+                src="/logo01.png"
+                width={200}
+                height={50}
+                alt="Airwix logo"
+              />
+            </Link>
+
             <p className="leading-relaxed mt-2 text-[15px]">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s.
+              Simplify complex operations and centralize data our ERP helps
+              teams move faster, work smarter, and make informed decisions.
             </p>
           </div>
           {/* <form onSubmit={(e) => e.preventDefault()}>
@@ -109,7 +117,7 @@ const Footer = () => {
       </div>
       <div className="items-center justify-between py-6 mt-8 border-t sm:flex">
         <div className="mt-4 sm:mt-0">
-          &copy; 2022 Float UI All rights reserved.
+          &copy; 2025 AIRWIX Technologies All rights reserved.
         </div>
         <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">

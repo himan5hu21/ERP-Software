@@ -19,7 +19,7 @@ const features = [
       </svg>
     ),
     title: "Fast Refresh",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+    desc: "Keep your data live and workflows fluid with real-time updates across inventory, inquiries, and reporting modules.",
     href: "/features/fast-refresh",
   },
   {
@@ -40,7 +40,7 @@ const features = [
       </svg>
     ),
     title: "Analytics",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+    desc: "Gain insights that drive smarter decisions. Visualize business performance with customizable dashboards and clean data views.",
     href: "/features/analytics",
   },
   {
@@ -61,7 +61,7 @@ const features = [
       </svg>
     ),
     title: "Report",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+    desc: "Your data shouldn’t just sit in tables it should guide your next move. Our reporting engine transforms raw numbers into clear insights.",
     href: "/features/reports",
   },
   // {
@@ -152,7 +152,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="mx-auto text-gray-800 bg-white">
+    <section className="mx-auto text-gray-800 mt-0.5 bg-white">
       <div className="p-6 py-12 rounded-lg bg-indigo-50">
         <h1 className="mb-10 text-4xl font-bold text-center text-indigo-700">
           Features

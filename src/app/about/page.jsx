@@ -30,23 +30,24 @@ export default function AboutPage() {
 
   return (
     <>
-      <section className="px-4 py-16 md:px-8 bg-gray-50">
+      <section className="px-4 py-16 mt-5 bg-white md:px-8">
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-indigo-700">About Us</h1>
-          <p className="mt-4 text-gray-600 text-lg">
+          <p className="mt-4 text-lg text-gray-600">
             We are a passionate team committed to building modern, scalable, and
             user-friendly web applications.
           </p>
         </div>
 
         {/* Mission */}
-        <div className="max-w-5xl mx-auto mt-12 grid gap-8 md:grid-cols-2 items-center">
+        <div className="grid items-center max-w-5xl gap-8 mx-auto mt-12 md:grid-cols-2">
           <div>
             <img
-              src="https://picsum.photos/600/400"
+              src="/image/mission.jpg"
               alt="Team working"
-              className="rounded-xl shadow-md"
+              className="shadow-md rounded-xl"
+              loading="lazy"
             />
           </div>
           <div>
@@ -65,66 +66,66 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto mt-20 px-4 md:px-0">
+        <div className="max-w-6xl px-4 mx-auto mt-20 md:px-0">
           <h3 className="text-3xl font-bold text-center text-indigo-700">
             Our Core Values
           </h3>
-          <p className="text-center text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto mt-4 text-center text-gray-600">
             At the heart of everything we do, our values guide our approach,
             define our culture, and shape the solutions we deliver. Here's what
             drives us forward.
           </p>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-4">
             {ourValues.map((item, index) => (
               <div
                 key={index}
-                className="bg-white border rounded-xl p-6 shadow hover:shadow-md hover:border-indigo-500 transition duration-300"
+                className="flex flex-col items-center p-6 space-y-3 text-center transition duration-300 ease-in-out bg-indigo-50 rounded-xl hover:shadow-md hover:-translate-2"
               >
-                <div className="text-4xl text-center mb-4">{item.emoji}</div>
+                <div className="mb-4 text-4xl text-center">{item.emoji}</div>
                 <h4 className="text-xl font-semibold text-indigo-700">
                   {item.title}
                 </h4>
-                <p className="mt-2 text-gray-600 text-sm">{item.desc}</p>
+                <p className="mt-2 text-sm text-gray-600">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Team Section */}
-        <div className="max-w-6xl mx-auto mt-20 text-center">
+        {/* <div className="max-w-6xl mx-auto mt-20 text-center">
           <h2 className="text-3xl font-semibold text-indigo-700">
             Meet Our Team
           </h2>
           <p className="mt-2 text-gray-600">
             Dedicated professionals behind our success
           </p>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow text-center"
+                className="p-6 text-center bg-white rounded-lg shadow"
               >
                 <img
                   src={`https://randomuser.me/api/portraits/${
                     index % 2 === 0 ? "men" : "women"
                   }/${index + 30}.jpg`}
                   alt={member.name}
-                  className="w-24 h-24 rounded-full mx-auto mb-4"
+                  className="w-24 h-24 mx-auto mb-4 rounded-full"
                 />
                 <h4 className="text-lg font-semibold">{member.name}</h4>
                 <p className="text-sm text-gray-500">{member.role}</p>
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Testimonials */}
-        <div className="max-w-5xl mx-auto mt-20 text-center">
+        {/* <div className="max-w-5xl mx-auto mt-20 text-center">
           <h2 className="text-3xl font-semibold text-indigo-700">
             What Our Clients Say
           </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 mt-10 md:grid-cols-2">
             {[
               {
                 quote:
@@ -137,7 +138,7 @@ export default function AboutPage() {
                 author: "Sara Johnson",
               },
             ].map((testimonial, index) => (
-              <div key={index} className="bg-white shadow rounded-xl p-6">
+              <div key={index} className="p-6 bg-white shadow rounded-xl">
                 <p className="text-gray-600">“{testimonial.quote}”</p>
                 <p className="mt-4 font-semibold text-indigo-600">
                   – {testimonial.author}
@@ -145,10 +146,10 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Contact CTA */}
-        <div className="max-w-3xl mx-auto mt-20 text-center bg-indigo-600 text-white rounded-2xl p-10 shadow-lg">
+        <div className="max-w-3xl p-10 mx-auto mt-20 text-center text-white bg-indigo-600 shadow-lg rounded-2xl">
           <h2 className="text-2xl font-bold">
             Let’s Build Something Great Together
           </h2>
@@ -157,7 +158,7 @@ export default function AboutPage() {
           </p>
           <a
             href="/contact"
-            className="inline-block mt-6 px-6 py-3 bg-white text-indigo-700 font-semibold rounded-lg shadow hover:bg-gray-100"
+            className="inline-block px-6 py-3 mt-6 font-semibold text-indigo-700 bg-white rounded-lg shadow hover:bg-gray-100"
           >
             Contact Us
           </a>

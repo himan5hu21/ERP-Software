@@ -1,28 +1,28 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const jobsData = [
   {
-    position: "Software Engineer",
-    department: "Engineering",
-    location: "Remote",
+    position: "React/Next Developer",
+    department: "Development",
+    location: "Ahmedabad, Gujarat",
   },
   {
-    position: "Product Manager",
-    department: "Product",
-    location: "New York, NY",
+    position: "Node.js Developer",
+    department: "Development",
+    location: "Ahmedabad, Gujarat",
   },
   {
-    position: "Sales Representative",
-    department: "Sales",
-    location: "Chicago, IL",
+    position: "QA Tester",
+    department: "Testing",
+    location: "Ahmedabad, Gujarat",
   },
-  {
-    position: "Customer Success Manager",
-    department: "Customer Success",
-    location: "San Francisco, CA",
-  },
-  { position: "UX Designer", department: "Design", location: "Remote" },
+  // {
+  //   position: "Customer Success Manager",
+  //   department: "Customer Success",
+  //   location: "San Francisco, CA",
+  // },
+  // { position: "UX Designer", department: "Design", location: "Remote" },
 ];
 
 const cultureValues = [
@@ -46,46 +46,47 @@ const cultureValues = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "Sophia Carter",
-    date: "2023-08-15",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBaSXmW-C7O1dBCatidfIZU8xpMfKcoXabRWhcqQ9GIPZ98X7pjXAo7QWwO--P2l53B6ooBilhm1sT-BdLOuLB7Dvvv_TEONGNZBvLzCHH0sNL-i7EbgQx3l8kCcs91gG4HXvma5lsKGVuFAeXIZijm5F86lqkIsKDMpDiiypXALW58riDQ_vwzgW2I32bo8bji9H_D2GhP3xfGlOmiQDOBsTyq_dZQ4hQ4FBZnctDqMSwiaEemoRKfr98w1ixYzIdVhcgJKgKdZZQ",
-    rating: 5,
-    text: "Working at CloudSolutions has been an incredible experience. The team is supportive, and I’ve had the opportunity to work on challenging and rewarding projects.",
-  },
-  {
-    name: "Ethan Bennett",
-    date: "2023-07-20",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA5_UCivIY5ouHBa-1n6VhH6kSEkBV_B2-agvTPOmQ78cbLKkjVGbm4v4IkWyC3IcaZaOa1k5iLGeI88UeNSvsCAxX4L6myvFHetf5wR3ckGigjIN05DlnPE_rdrcqzWo4pWMzUA2eEHfbW_jjyzJxf5rJF2nvQx6y1jpQ4Af0Br2hm-GJBoCIKYLp-3jCJxgeyZVBVwJGy9FW2FOQo7SaL1OKxhfjZau3HAL4ZUhyiR6XsRQA9i_F_csrRpBt3y-Wu03OTTm7ofyw",
-    rating: 4,
-    text: "I appreciate the company’s focus on innovation and continuous learning. There’s always something new to explore and contribute to.",
-  },
-  {
-    name: "Olivia Hayes",
-    date: "2023-06-10",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAzeBZOwEBO_hW3ztHbjGSqdKaWrr9CYtdc7zZdRe0i8JA_6aYdTEnQQ3dJE0EFgQmp5cTu4zPtx9o-VItY-ogquEwaXWtutJkDRy3LzWYxpzKhDeIFy-R8o3hI3uoXgNB24aCAeVbJI3MTxZTFBvdYSyUGiHYTT4pvweN08zAHIT3GbEjDozJ106i83bTStRJ13jblmz3ni0mpPYO6DJfL0_EowZG6LB_X-9HsBWb1q4EJMawJTDodybaLBEftA9w63FNrO9Ml38g",
-    rating: 5,
-    text: "The culture at CloudSolutions is truly unique. I feel valued and empowered to make a difference. The work-life balance is excellent.",
-  },
-];
+// const testimonials = [
+//   {
+//     name: "Sophia Carter",
+//     date: "2023-08-15",
+//     image:
+//       "https://lh3.googleusercontent.com/aida-public/AB6AXuBaSXmW-C7O1dBCatidfIZU8xpMfKcoXabRWhcqQ9GIPZ98X7pjXAo7QWwO--P2l53B6ooBilhm1sT-BdLOuLB7Dvvv_TEONGNZBvLzCHH0sNL-i7EbgQx3l8kCcs91gG4HXvma5lsKGVuFAeXIZijm5F86lqkIsKDMpDiiypXALW58riDQ_vwzgW2I32bo8bji9H_D2GhP3xfGlOmiQDOBsTyq_dZQ4hQ4FBZnctDqMSwiaEemoRKfr98w1ixYzIdVhcgJKgKdZZQ",
+//     rating: 5,
+//     text: "Working at CloudSolutions has been an incredible experience. The team is supportive, and I’ve had the opportunity to work on challenging and rewarding projects.",
+//   },
+//   {
+//     name: "Ethan Bennett",
+//     date: "2023-07-20",
+//     image:
+//       "https://lh3.googleusercontent.com/aida-public/AB6AXuA5_UCivIY5ouHBa-1n6VhH6kSEkBV_B2-agvTPOmQ78cbLKkjVGbm4v4IkWyC3IcaZaOa1k5iLGeI88UeNSvsCAxX4L6myvFHetf5wR3ckGigjIN05DlnPE_rdrcqzWo4pWMzUA2eEHfbW_jjyzJxf5rJF2nvQx6y1jpQ4Af0Br2hm-GJBoCIKYLp-3jCJxgeyZVBVwJGy9FW2FOQo7SaL1OKxhfjZau3HAL4ZUhyiR6XsRQA9i_F_csrRpBt3y-Wu03OTTm7ofyw",
+//     rating: 4,
+//     text: "I appreciate the company’s focus on innovation and continuous learning. There’s always something new to explore and contribute to.",
+//   },
+//   {
+//     name: "Olivia Hayes",
+//     date: "2023-06-10",
+//     image:
+//       "https://lh3.googleusercontent.com/aida-public/AB6AXuAzeBZOwEBO_hW3ztHbjGSqdKaWrr9CYtdc7zZdRe0i8JA_6aYdTEnQQ3dJE0EFgQmp5cTu4zPtx9o-VItY-ogquEwaXWtutJkDRy3LzWYxpzKhDeIFy-R8o3hI3uoXgNB24aCAeVbJI3MTxZTFBvdYSyUGiHYTT4pvweN08zAHIT3GbEjDozJ106i83bTStRJ13jblmz3ni0mpPYO6DJfL0_EowZG6LB_X-9HsBWb1q4EJMawJTDodybaLBEftA9w63FNrO9Ml38g",
+//     rating: 5,
+//     text: "The culture at CloudSolutions is truly unique. I feel valued and empowered to make a difference. The work-life balance is excellent.",
+//   },
+// ];
 
-const Star = ({ filled }: { filled: boolean }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    fill={filled ? "#111418" : "#bac4cf"}
-    viewBox="0 0 256 256"
-  >
-    <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z" />
-  </svg>
-);
+// const Star = ({ filled }: { filled: boolean }) => (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     width="20"
+//     height="20"
+//     fill={filled ? "#111418" : "#bac4cf"}
+//     viewBox="0 0 256 256"
+//   >
+//     <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z" />
+//   </svg>
+// );
 
 export default function Careers() {
+  const openPositionRef = useRef<HTMLDivElement>(null);
   const [inputVal, setInputVal] = useState("");
 
   const filteredJobs = jobsData.filter((job) =>
@@ -94,8 +95,12 @@ export default function Careers() {
       .includes(inputVal.toLowerCase())
   );
 
+  const scrollToOpenPosition = () => {
+    openPositionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="relative flex flex-col w-full min-h-screen overflow-x-hidden bg-white group/design-root">
+    <div className="relative flex flex-col w-full min-h-screen mt-5 overflow-x-hidden bg-white group/design-root">
       <div className="flex flex-col h-full grow">
         <div className="flex justify-center flex-1 w-full px-2 py-3 sm:px-4 md:px-10 lg:px-40">
           <div className="flex flex-col w-full max-w-[960px] flex-1">
@@ -117,14 +122,17 @@ export default function Careers() {
                     to innovate and grow in a dynamic environment.
                   </h2>
                 </div>
-                <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-5 bg-indigo-700 hover:bg-indigo-600 text-white text-sm font-bold leading-normal tracking-[0.015em] sm:text-base sm:font-bold sm:leading-normal sm:tracking-[0.015em]">
+                <button
+                  onClick={scrollToOpenPosition}
+                  className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-5 bg-indigo-700 hover:bg-indigo-600 text-white text-sm font-bold leading-normal tracking-[0.015em] sm:text-base sm:font-bold sm:leading-normal sm:tracking-[0.015em]"
+                >
                   <span className="truncate">View Open Positions</span>
                 </button>
               </div>
             </div>
 
             {/* Open positions */}
-            <section className="mt-5">
+            <section ref={openPositionRef} className="mt-5">
               <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
                 Open Positions
               </h2>
@@ -230,7 +238,7 @@ export default function Careers() {
             </section>
 
             {/* Employee testimonials */}
-            <section className="mt-5">
+            {/* <section className="mt-5">
               <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
                 Employee Testimonials
               </h2>
@@ -258,7 +266,7 @@ export default function Careers() {
                   </div>
                 ))}
               </div>
-            </section>
+            </section> */}
 
             {/* Join us */}
             <div className="mt-5">
@@ -270,7 +278,10 @@ export default function Careers() {
                 </div>
                 <div className="flex justify-center flex-1">
                   <div className="flex justify-center">
-                    <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-5 bg-white text-indigo-700 hover:bg-indigo-100 text-sm font-bold leading-normal tracking-[0.015em] sm:text-base sm:font-bold sm:leading-normal sm:tracking-[0.015em] grow">
+                    <button
+                      onClick={scrollToOpenPosition}
+                      className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-5 bg-white text-indigo-700 hover:bg-indigo-100 text-sm font-bold leading-normal tracking-[0.015em] sm:text-base sm:font-bold sm:leading-normal sm:tracking-[0.015em] grow"
+                    >
                       <span className="truncate">View Open Positions</span>
                     </button>
                   </div>

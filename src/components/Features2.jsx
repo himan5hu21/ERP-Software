@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const images = [
   "https://letstranzact.com/_nuxt/img/multi-bom-snap.f117b72.svg",
@@ -197,12 +198,12 @@ export default function Features2() {
     <>
       <section className="py-10 mt-5">
         {/* heading */}
-        <div className="px-4 lg:mx-16 mb-4">
-          <div className="flex flex-col sm:flex-row items-center justify-center text-center gap-4 mb-5">
+        <div className="px-4 mb-4 lg:mx-16">
+          <div className="flex flex-col items-center justify-center gap-4 mb-5 text-center sm:flex-row">
             {/* Gradient Line Left */}
             <div className="w-full sm:w-32 md:w-40 h-[2px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
-            <h1 className="text-xl md:text-2xl font-semibold text-gray-800 px-4">
-              <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+            <h1 className="px-4 text-xl font-semibold text-gray-800 md:text-2xl">
+              <span className="text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
                 One-stop solution
               </span>{" "}
               for all your Production Management needs
@@ -212,11 +213,11 @@ export default function Features2() {
           </div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto py-10 px-4">
+        <div className="relative max-w-6xl px-4 py-10 mx-auto">
           {/* Tabs */}
           <div className="relative z-10 flex w-full max-w-5xl justify-center mb-5 md:mb-[-20px]">
             <div className="w-full overflow-x-auto scrollbar-none">
-              <div className="w-fit mx-auto flex flex-nowrap justify-center gap-4 border border-indigo-100 rounded-full px-4 bg-white shadow-sm whitespace-nowrap">
+              <div className="flex justify-center gap-4 px-4 mx-auto bg-white border border-indigo-100 rounded-full shadow-sm w-fit flex-nowrap whitespace-nowrap">
                 {productionTab.map((tab, index) => (
                   <button
                     key={index}
@@ -235,7 +236,7 @@ export default function Features2() {
           </div>
 
           {/* Tab Content */}
-          <div className="border border-indigo-500 rounded-4xl px-6 pt-16 pb-12 text-center bg-indigo-50 relative z-0 min-h-[400px]">
+          <div className="border border-indigo-500 rounded-4xl px-6 pt-16 pb-12 text-center bg-indigo-50 relative z-0 min-h-[450px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
@@ -243,15 +244,16 @@ export default function Features2() {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: 100, opacity: 0 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="space-y-6"
+                className="my-auto space-y-6"
               >
-                <h3 className="text-lg md:text-xl text-gray-700 font-medium">
+                <h3 className="text-lg font-medium text-gray-700 md:text-xl">
                   {productionTab[activeTab].desc}
                 </h3>
                 <img
                   src={productionTab[activeTab].img}
                   alt={productionTab[activeTab].title}
-                  className="mx-auto max-w-full h-auto"
+                  className="h-auto max-w-full mx-auto"
+                  loading="lazy"
                 />
               </motion.div>
             </AnimatePresence>
@@ -259,27 +261,27 @@ export default function Features2() {
         </div>
 
         {/* Button */}
-        <div className="text-center my-5">
-          <a
-            href="#"
+        {/* <div className="my-5 text-center">
+          <Link
+            href="/pricing"
             button-name="Start Production Planning Now"
-            className="inline-block bg-indigo-600 text-white font-medium text-sm px-6 py-3 rounded-md shadow-md hover:bg-indigo-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+            className="inline-block px-6 py-3 text-sm font-medium text-white transition-all duration-300 bg-indigo-600 rounded-md shadow-md hover:bg-indigo-700 hover:-translate-y-1 hover:shadow-lg"
           >
             <span className="cta-text">Start Production Planning Now</span>
-          </a>
-        </div>
+          </Link>
+        </div> */}
       </section>
 
       <section className="py-10 mt-5">
         {/* heading */}
-        <div className="px-4 lg:mx-16 mb-4">
-          <div className="flex flex-col sm:flex-row items-center justify-center text-center gap-4 mb-5">
+        <div className="px-4 mb-4 lg:mx-16">
+          <div className="flex flex-col items-center justify-center gap-4 mb-5 text-center sm:flex-row">
             {/* Gradient Line Left */}
             <div className="w-full sm:w-32 md:w-40 h-[2px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
-            <h1 className="text-xl md:text-2xl font-semibold text-gray-800 px-4">
+            <h1 className="px-4 text-xl font-semibold text-gray-800 md:text-2xl">
               Transform your business with{" "}
-              <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
-                TranZact&apos;s full suite
+              <span className="text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
+                AirWix&apos;s full suite
               </span>{" "}
               of solutions
             </h1>
@@ -288,11 +290,11 @@ export default function Features2() {
           </div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto py-10 px-4">
+        <div className="relative max-w-6xl px-4 py-10 mx-auto">
           {/* Tabs */}
-          <div className="relative z-10 flex w-full max-w-5xl justify-center mb-5">
+          <div className="relative z-10 flex justify-center w-full max-w-5xl mb-5">
             <div className="w-full overflow-x-auto scrollbar-none">
-              <div className="w-fit mx-auto flex flex-nowrap justify-center gap-4 border border-indigo-100 rounded-full px-4 bg-white shadow-sm whitespace-nowrap">
+              <div className="flex justify-center gap-4 px-4 mx-auto bg-white border border-indigo-100 rounded-full shadow-sm w-fit flex-nowrap whitespace-nowrap">
                 {inventoryTab.map((tab, index) => (
                   <button
                     key={index}
@@ -311,7 +313,7 @@ export default function Features2() {
           </div>
 
           {/* Tab Content */}
-          <div className="relative mt-6 max-w-screen-xl mx-auto overflow-hidden">
+          <div className="relative max-w-screen-xl mx-auto mt-6 overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab2} // triggers animation when tab changes
@@ -319,20 +321,21 @@ export default function Features2() {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: 100, opacity: 0 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
               >
                 {inventoryTab[activeTab2]?.features.map((card, idx) => (
                   <div
                     key={idx}
-                    className={`flex items-center justify-between gap-4 p-4 rounded-lg font-semibold ${card.bgColor}`}
+                    className={`flex items-center justify-between gap-4 p-4 rounded-lg font-semibold min-h-[150px] ${card.bgColor}`}
                   >
-                    <div className="text-center md:text-left text-base max-w-xs">
+                    <div className="max-w-xs text-base text-center md:text-left">
                       {card.desc}
                     </div>
                     <img
                       src={card.img}
                       alt="card visual"
-                      className="max-h-24 md:max-h-28 w-auto"
+                      className="w-auto max-h-24 md:max-h-28"
+                      loading="lazy"
                     />
                   </div>
                 ))}
@@ -344,11 +347,11 @@ export default function Features2() {
 
       <section className="py-10">
         {/* heading */}
-        <div className="px-4 lg:mx-16 mb-4">
-          <div className="flex flex-col sm:flex-row items-center justify-center text-center gap-4 mb-5">
+        <div className="px-4 mb-4 lg:mx-16">
+          <div className="flex flex-col items-center justify-center gap-4 mb-5 text-center sm:flex-row">
             {/* Gradient Line Left */}
             <div className="w-full sm:w-32 md:w-40 h-[2px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
-            <h1 className="text-xl md:text-2xl font-semibold text-gray-800 px-4">
+            <h1 className="px-4 text-xl font-semibold text-gray-800 md:text-2xl">
               Implementation & after-sales support
             </h1>
             {/* Gradient Line Right */}
@@ -356,30 +359,30 @@ export default function Features2() {
           </div>
         </div>
 
-        <div className="bg-indigo-50 py-5 mt-12">
+        <div className="py-5 mt-12 bg-indigo-50">
           {/* Content */}
           <div className="max-w-[1200px] py-10 mt-5 mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-4 my-6">
             {/* Block 1 */}
-            <div className="flex flex-col items-center text-center mb-5 sm:mb-0 sm:w-5/12">
+            <div className="flex flex-col items-center mb-5 text-center sm:mb-0 sm:w-5/12">
               <img
                 src="/image/feature-14day.svg"
                 alt="Go Live in 14 Days"
                 className="mb-3"
               />
-              <h2 className="text-xl sm:text-2xl font-semibold">
+              <h2 className="text-xl font-semibold sm:text-2xl">
                 Go Live in
                 <br className="hidden sm:block" /> 14 Days!
               </h2>
             </div>
 
             {/* Block 2 */}
-            <div className="flex flex-col items-center text-center mb-5 sm:mb-0 sm:px-0 sm:w-5/12">
+            <div className="flex flex-col items-center mb-5 text-center sm:mb-0 sm:px-0 sm:w-5/12">
               <img
                 src="/image/feature-setting.svg"
                 alt="Free Implementation"
                 className="mb-3"
               />
-              <h2 className="text-xl sm:text-2xl font-semibold">
+              <h2 className="text-xl font-semibold sm:text-2xl">
                 Free Implementation
                 <br />
                 <span className="hidden sm:inline">&amp; Training</span>
@@ -387,32 +390,32 @@ export default function Features2() {
             </div>
 
             {/* Block 3 */}
-            <div className="flex flex-col items-center text-center mb-5 sm:mb-0 sm:w-5/12">
+            <div className="flex flex-col items-center mb-5 text-center sm:mb-0 sm:w-5/12">
               <img
                 src="/image/feature-support.svg"
                 alt="Free Chat Support"
                 className="mb-3"
               />
-              <h2 className="hidden sm:inline text-xl sm:text-2xl font-semibold">
+              <h2 className="hidden text-xl font-semibold sm:inline sm:text-2xl">
                 Free Chat Support
                 <br /> within 10 seconds
               </h2>
-              <h2 className="sm:hidden text-xl font-semibold">
+              <h2 className="text-xl font-semibold sm:hidden">
                 Instant Support
               </h2>
             </div>
           </div>
 
           {/* Button */}
-          <div className="text-center my-5">
-            <a
-              href="#"
+          {/* <div className="my-5 text-center">
+            <Link
+              href="/pricing"
               button-name="Start Production Planning Now"
-              className="inline-block bg-indigo-600 text-white font-medium text-sm px-6 py-3 rounded-md shadow-md hover:bg-indigo-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="inline-block px-6 py-3 text-sm font-medium text-white transition-all duration-300 bg-indigo-600 rounded-md shadow-md hover:bg-indigo-700 hover:-translate-y-1 hover:shadow-lg"
             >
               <span className="cta-text">Start Production Planning Now</span>
-            </a>
-          </div>
+            </Link>
+          </div> */}
         </div>
       </section>
     </>

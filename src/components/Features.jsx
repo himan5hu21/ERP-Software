@@ -20,7 +20,7 @@ const Features = () => {
         </svg>
       ),
       title: "Fast Refresh",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      desc: "Keep your data live and workflows fluid with real-time updates across inventory, inquiries, and reporting modules.",
       href: "#",
     },
     {
@@ -41,7 +41,7 @@ const Features = () => {
         </svg>
       ),
       title: "Analytics",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      desc: "Gain insights that drive smarter decisions. Visualize business performance with customizable dashboards and clean data views.",
       href: "#",
     },
     {
@@ -62,7 +62,7 @@ const Features = () => {
         </svg>
       ),
       title: "Datacenter security",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      desc: "Your business data is encrypted, secure, and always backed by scalable infrastructure with multi-level protection.",
       href: "#",
     },
     {
@@ -83,7 +83,7 @@ const Features = () => {
         </svg>
       ),
       title: "Build on your terms",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      desc: "Customize modules, user roles, and permissions—Airwix ERP adapts to your processes, not the other way around.",
       href: "#",
     },
     {
@@ -104,7 +104,7 @@ const Features = () => {
         </svg>
       ),
       title: "Safe to use",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      desc: "Built with privacy-first architecture and strict access controls, ensuring safety for every user role and operation.",
       href: "#",
     },
     {
@@ -125,38 +125,38 @@ const Features = () => {
         </svg>
       ),
       title: "Flexible",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      desc: "Whether you're handling manufacturing, sales, or procurement—our ERP moves with your business, wherever it’s headed.",
       href: "#",
     },
   ];
 
   return (
     <section className="py-14">
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
+      <div className="max-w-screen-xl px-4 mx-auto text-gray-600 md:px-8">
         <div className="max-w-xl space-y-3">
-          <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          <h3 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
             Simple solutions for complex issues
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            congue, nisl eget molestie varius, enim ex faucibus purus
+            Handle enterprise challenges with intuitive tools designed to
+            streamline operations, improve workflows, and reduce friction.
           </p>
         </div>
         <div className="mt-12">
           <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
               <li key={idx} className="flex gap-x-4">
-                <div className="flex-none w-12 h-12 bg-indigo-600 text-white rounded-lg flex items-center justify-center">
+                <div className="flex items-center justify-center flex-none w-12 h-12 text-white bg-indigo-600 rounded-lg">
                   {item.icon}
                 </div>
                 <div className="space-y-3">
-                  <h4 className="text-lg text-gray-800 font-semibold">
+                  <h4 className="text-lg font-semibold text-gray-800">
                     {item.title}
                   </h4>
                   <p>{item.desc}</p>
                   <a
                     href={item.href}
-                    className="text-sm text-indigo-600 duration-150 hover:text-indigo-400 font-medium inline-flex items-center gap-x-1"
+                    className="inline-flex items-center text-sm font-medium text-indigo-600 duration-150 hover:text-indigo-400 gap-x-1"
                   >
                     Learn more
                     <FaArrowRightLong className="relative top-0.5" />

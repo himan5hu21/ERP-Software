@@ -280,8 +280,8 @@ export default function Partners() {
 
   return (
     <>
-      <section className="px-2 bg-white sm:px-4 md:px-10 lg:px-40">
-        <div className="container px-6 py-8 mx-auto">
+      <section className="px-2 mt-5 sm:px-4 md:px-10 lg:px-40">
+        <div className="container px-6 py-8 mx-auto bg-white">
           <div className="sm:flex sm:items-center sm:justify-between">
             <div>
               <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl ">

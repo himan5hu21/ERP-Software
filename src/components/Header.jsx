@@ -83,50 +83,50 @@ const dropdownNavs = [
       // },
     ],
   },
-  {
-    label: "Company",
-    navs: [
-      {
-        title: "About us",
-        desc: "Duis aute irure dolor in reprehenderit",
-        path: "/about",
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              fillRule="evenodd"
-              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-        ),
-      },
-      {
-        title: "Careers",
-        desc: "Duis aute irure dolor in reprehenderit",
-        path: "/careers",
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              fillRule="evenodd"
-              d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-              clipRule="evenodd"
-            />
-            <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
-          </svg>
-        ),
-      },
-    ],
-  },
+  // {
+  //   label: "Company",
+  //   navs: [
+  //     {
+  //       title: "About us",
+  //       desc: "Duis aute irure dolor in reprehenderit",
+  //       path: "/about",
+  //       icon: (
+  //         <svg
+  //           xmlns="http://www.w3.org/2000/svg"
+  //           viewBox="0 0 24 24"
+  //           fill="currentColor"
+  //           className="w-6 h-6"
+  //         >
+  //           <path
+  //             fillRule="evenodd"
+  //             d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+  //             clipRule="evenodd"
+  //           />
+  //         </svg>
+  //       ),
+  //     },
+  //     {
+  //       title: "Careers",
+  //       desc: "Duis aute irure dolor in reprehenderit",
+  //       path: "/careers",
+  //       icon: (
+  //         <svg
+  //           xmlns="http://www.w3.org/2000/svg"
+  //           viewBox="0 0 24 24"
+  //           fill="currentColor"
+  //           className="w-6 h-6"
+  //         >
+  //           <path
+  //             fillRule="evenodd"
+  //             d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+  //             clipRule="evenodd"
+  //           />
+  //           <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+  //         </svg>
+  //       ),
+  //     },
+  //   ],
+  // },
 ];
 
 const Header = () => {
@@ -157,7 +157,9 @@ const Header = () => {
     },
     // { title: "Integrations", path: "#", isDrapdown: false },
     // { title: "Customers", path: "#", isDrapdown: false },
-    { title: "Pricing", path: "/pricing", isDrapdown: false },
+    // { title: "Pricing", path: "/pricing", isDrapdown: false },
+    { title: "Careers", path: "/careers", isDropdown: false },
+    { title: "About Us", path: "/about", isDropdown: false },
     { title: "Contact Us", path: "/contact", isDropdown: false },
   ];
 
@@ -182,8 +184,8 @@ const Header = () => {
   return (
     <>
       <nav
-        className={`relative z-20 bg-white w-full md:static md:text-sm md:border-none ${
-          state ? "shadow-lg rounded-b-xl md:shadow-sm" : ""
+        className={`relative z-20 bg-white w-full md:static md:text-sm md:border-none md:shadow-sm ${
+          state ? "shadow-lg rounded-b-xl" : ""
         }`}
       >
         <div className="items-center max-w-screen-xl px-4 mx-auto gap-x-14 md:flex md:px-8">
@@ -191,10 +193,10 @@ const Header = () => {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/">
               <img
-                src="https://www.floatui.com/logo.svg"
-                width={120}
+                src="/logo01.png"
+                width={200}
                 height={50}
-                alt="Float UI logo"
+                alt="Airwix logo"
               />
             </Link>
             {/* Hamburger button for mobile */}
@@ -283,9 +285,11 @@ const Header = () => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
                             transition={{ duration: 0.3, ease: "easeOut" }}
-                            className="mt-6 md:absolute md:mt-0 inset-x-0 top-20 bg-white w-full md:w-[900px] md:rounded-xl md:border md:border-gray-200 md:shadow-lg md:mx-auto z-10"
+                            className="mt-6 md:absolute md:mt-0 inset-x-0 top-20 bg-white w-full md:max-w-[900px] md:rounded-xl md:border md:border-gray-200 md:shadow-lg md:mx-auto z-10"
                           >
-                            <ul className="grid items-start max-w-screen-xl gap-6 mx-auto md:p-8 md:grid-cols-2 lg:grid-cols-3">
+                            <ul className="grid items-start max-w-screen-xl gap-6 mx-auto md:p-8 md:grid-cols-2 ">
+                              {" "}
+                              {/*lg:grid-cols-3 */}
                               {item?.navs.map((dropdownItem, idx) => (
                                 <li key={idx}>
                                   <p className="text-sm text-indigo-600">
@@ -305,9 +309,9 @@ const Header = () => {
                                             <span className="text-sm font-medium text-gray-800 duration-200 group-hover:text-indigo-600 md:text-base">
                                               {navItem.title}
                                             </span>
-                                            <p className="mt-1 text-sm text-gray-600 group-hover:text-gray-800">
+                                            {/* <p className="mt-1 text-sm text-gray-600 group-hover:text-gray-800">
                                               {navItem.desc}
-                                            </p>
+                                            </p> */}
                                           </div>
                                         </a>
                                       </li>
@@ -327,7 +331,7 @@ const Header = () => {
                 <li>
                   <button
                     onClick={handleOpen}
-                    className="block px-4 py-3 font-medium text-center text-white bg-indigo-600 rounded-lg shadow hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none md:inline whitespace-nowrap"
+                    className="block w-full px-4 py-3 font-medium text-center text-white bg-indigo-600 rounded-lg shadow md:w-auto hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none md:inline whitespace-nowrap"
                   >
                     Book a Demo
                   </button>

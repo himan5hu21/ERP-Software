@@ -1,21 +1,21 @@
 export default function TermsAndConditionsPage() {
   return (
-    <section className="bg-white text-gray-800 mx-auto">
-      <div className="bg-indigo-50 rounded-lg p-6">
-        <h1 className="text-4xl font-bold text-indigo-700 text-center mb-10">
+    <section className="bg-white text-gray-800 mx-auto mt-0.5 ">
+      <div className="p-6 rounded-lg bg-indigo-50">
+        <h1 className="mb-10 text-4xl font-bold text-center text-indigo-700">
           Terms and Conditions
         </h1>
 
-        <p className="max-w-5xl mx-auto text-center mb-6">
+        <p className="max-w-5xl mx-auto mb-6 text-center">
           These Terms and Conditions ("Terms") govern your access to and use of
           our ERP Software (“Software”) and related services (“Services”). By
           accessing or using our Services, you agree to be bound by these Terms.
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto p-6">
+      <div className="max-w-5xl p-6 mx-auto">
         {/* Section 1 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           1. Acceptance of Terms
         </h2>
         <p className="mb-4">
@@ -26,7 +26,7 @@ export default function TermsAndConditionsPage() {
         </p>
 
         {/* Section 2 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           2. License and Access
         </h2>
         <p className="mb-4">
@@ -36,10 +36,10 @@ export default function TermsAndConditionsPage() {
         </p>
 
         {/* Section 3 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           3. User Responsibilities
         </h2>
-        <ul className="list-disc pl-6 mb-4 space-y-2">
+        <ul className="pl-6 mb-4 space-y-2 list-disc">
           <li>
             You must provide accurate information and maintain the security of
             your login credentials.
@@ -54,7 +54,7 @@ export default function TermsAndConditionsPage() {
         </ul>
 
         {/* Section 4 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           4. Data Privacy & Security
         </h2>
         <p className="mb-4">
@@ -67,7 +67,7 @@ export default function TermsAndConditionsPage() {
         </p>
 
         {/* Section 5 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           5. Payment & Subscription
         </h2>
         <p className="mb-4">
@@ -77,7 +77,7 @@ export default function TermsAndConditionsPage() {
         </p>
 
         {/* Section 6 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           6. Intellectual Property
         </h2>
         <p className="mb-4">
@@ -88,7 +88,7 @@ export default function TermsAndConditionsPage() {
         </p>
 
         {/* Section 7 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">
           7. Limitation of Liability
         </h2>
         <p className="mb-4">
@@ -98,7 +98,7 @@ export default function TermsAndConditionsPage() {
         </p>
 
         {/* Section 8 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">8. Termination</h2>
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">8. Termination</h2>
         <p className="mb-4">
           We reserve the right to suspend or terminate your access to the
           Software at any time for violations of these Terms or misuse of the
@@ -106,14 +106,14 @@ export default function TermsAndConditionsPage() {
         </p>
 
         {/* Section 9 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">9. Modifications</h2>
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">9. Modifications</h2>
         <p className="mb-4">
           We may update these Terms from time to time. Continued use of the
           Software after changes means you accept the updated Terms.
         </p>
 
         {/* Section 10 */}
-        <h2 className="text-2xl font-semibold mt-8 mb-2">10. Contact</h2>
+        <h2 className="mt-8 mb-2 text-2xl font-semibold">10. Contact</h2>
         <p className="mb-4">
           If you have questions about these Terms, please contact us at{" "}
           <a
@@ -125,7 +125,7 @@ export default function TermsAndConditionsPage() {
           .
         </p>
 
-        <p className="text-sm text-gray-500 mt-12 text-center">
+        <p className="mt-12 text-sm text-center text-gray-500">
           Last updated: July 11, 2025
         </p>
       </div>
